@@ -1,0 +1,8 @@
+{
+  "name": "my_personal_website-8-6-2019",
+  "version": "1.0.0",
+  "description": "build my website",
+  "main": "index.js",
+  "author": "yazan al monshed",
+  "license": "MIT"
+}
