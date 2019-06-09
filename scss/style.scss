@@ -1,9 +1,9 @@
+@import 'config';
+@import './menu';
+
 * {
     box-sizing: border-box
 }
-
-@import 'config';
-
 
 
 body {
@@ -34,17 +34,17 @@ h4 {
 }
 
 a {
-    text-decoration: none;
+    @include unstyled;
+    color: #FFF
 }
 
-ul li {
-    @include unstyled;
-    padding: 1rem;
-    display: inline-block
+li {
+    list-style-type: none;
+    padding: 22px;
+
 }
 
 header {
-    position: fixed;
     overflow: hidden;
     z-index: 3;
 }

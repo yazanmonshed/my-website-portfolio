@@ -2,15 +2,14 @@ $primary-color: #777;
 
 
 
-$bg-image: url('../img/slider01.jpg');
+$bg-image: url('../img/choose.png');
 $show-image: true;
 $bg-opacity: 0.5;
 
 // here Mixin's  function
 @mixin unstyled {
-    list-style-type: none;
     padding-left: 0;
-
+    text-decoration: none;
 }
 
 @mixin transitions-item($PropName, $time, $fntime) {
