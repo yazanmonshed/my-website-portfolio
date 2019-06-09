@@ -1,0 +1,43 @@
+Arguments: 
+  /usr/bin/node /usr/share/yarn/bin/yarn.js add node-scss
+
+PATH: 
+  /home/yazanalmonshed/.cargo/bin:/home/yazanalmonshed/.local/bin:/home/yazanalmonshed/bin:/var/home/yazanalmonshed/Desktop/workspace/django-website/bin:/home/yazanalmonshed/.local/bin:/home/yazanalmonshed/bin:/home/yazanalmonshed/.cargo/bin:/home/yazanalmonshed/anaconda3/bin:/home/yazanalmonshed/.local/bin:/home/yazanalmonshed/bin:/usr/libexec/python3-sphinx:/usr/share/Modules/bin:/usr/condabin:/usr/lib64/ccache:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin
+
+Yarn version: 
+  1.16.0
+
+Node version: 
+  10.15.3
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/node-scss: Not found
+      at Request.params.callback [as _callback] (/usr/share/yarn/lib/cli.js:66091:18)
+      at Request.self.callback (/usr/share/yarn/lib/cli.js:129590:22)
+      at Request.emit (events.js:189:13)
+      at Request.<anonymous> (/usr/share/yarn/lib/cli.js:130562:10)
+      at Request.emit (events.js:189:13)
+      at IncomingMessage.<anonymous> (/usr/share/yarn/lib/cli.js:130484:12)
+      at Object.onceWrapper (events.js:277:13)
+      at IncomingMessage.emit (events.js:194:15)
+      at endReadableNT (_stream_readable.js:1125:12)
+      at process._tickCallback (internal/process/next_tick.js:63:19)
+
+npm manifest: 
+  {
+    "name": "my_personal_website-8-6-2019",
+    "version": "1.0.0",
+    "description": "build my website",
+    "main": "index.js",
+    "author": "yazan al monshed",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

@@ -2,7 +2,13 @@
   "name": "my_personal_website-8-6-2019",
   "version": "1.0.0",
   "description": "build my website",
+  "scripts": {
+    "sass": "node-sass -w scss/  -o dist/css/ --recursive"
+  },
   "main": "index.js",
   "author": "yazan al monshed",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
 }
