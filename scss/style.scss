@@ -56,6 +56,8 @@ header {
 main {
 
     padding: 4rem;
+    // height: 100%;
+    height: calc(100vh - 60px);
     // @include transitions-item(all, 3s, ease-in-out);
     z-index: 1;
 
@@ -73,7 +75,8 @@ main {
         'image bio bio'
         'work work work';
     grid-template-columns: repeat(3, 1fr);
-    margin-top: 40px
+    margin-top: 40px;
+
 }
 
 .info-image {
@@ -125,14 +128,46 @@ main {
     box-shadow: 1px 1px 10px #000
 }
 
+.projects {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    margin: 5px;
+
+
+    & img {
+
+        // width: 25rem;
+        width: 400px;
+
+        &:hover {
+            opacity: .5;
+            transition: all .3s ease-in-out;
+
+
+        }
+    }
+
+
+    & .icon {
+        background: #000;
+        width: 400px;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
 footer {
+
     text-align: center;
-    width: 100%;
     background: #000;
     line-height: 3.9;
-    height: 79px;
+    // height: 79px;
     font-weight: bolder;
     font-size: 20px;
     color: #FFF;
-    box-shadow: 1px 1px 10px #000 // Change when Change background AOT 
+    box-shadow: 1px 1px 10px #000; // Change when Change background AOT 
+    width: 100%;
+    position: fixed;
 }
