@@ -1,4 +1,4 @@
-@import 'config';
+@import './settings';
 @import './menu';
 @import './screens';
 
@@ -168,6 +168,23 @@ footer {
     font-size: 20px;
     color: #FFF;
     box-shadow: 1px 1px 10px #000; // Change when Change background AOT 
-    width: 100%;
-    position: fixed;
+
+}
+
+.boxes {
+
+    &>div {
+        border: 6px solid #FFF;
+        width: 700px;
+        padding: 40px;
+        margin: 30px auto;
+        font-weight: bold;
+        font-size: 30px;
+
+
+        &:hover {
+            opacity: .5;
+            transition: all 0.3s ease-in-out;
+        }
+    }
 }
