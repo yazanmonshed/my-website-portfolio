@@ -108,7 +108,10 @@ main .icons .icon .fab:hover {
     text-align: center; }
     .menu .brand .person-image {
       width: 150px;
-      height: 150px; } }
+      height: 150px; }
+  footer {
+    width: 100%;
+    position: fixed; } }
 
 @media screen and (max-width: 767px) {
   main {
@@ -133,10 +136,7 @@ main .icons .icon .fab:hover {
     line-height: 1.5; }
   .projects {
     grid-template-columns: repeat(4, 1fr);
-    overflow-x: hidden; }
-  footer {
-    width: 100%;
-    position: fixed; } }
+    overflow-x: hidden; } }
 
 * {
   box-sizing: border-box; }
@@ -265,15 +265,20 @@ footer {
   font-weight: bolder;
   font-size: 20px;
   color: #FFF;
-  box-shadow: 1px 1px 10px #000; }
+  box-shadow: 1px 1px 10px #000;
+  width: 100%; }
 
-.boxes > div {
-  border: 6px solid #FFF;
-  width: 700px;
-  padding: 40px;
-  margin: 30px auto;
-  font-weight: bold;
-  font-size: 30px; }
-  .boxes > div:hover {
-    opacity: .5;
-    transition: all 0.3s ease-in-out; }
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .boxes div {
+    border: 6px solid #FFF;
+    width: 700px;
+    padding: 40px;
+    margin: 30px auto;
+    font-weight: bold;
+    font-size: 30px; }
+    .boxes div:hover {
+      opacity: .5;
+      transition: all 0.3s ease-in-out; }

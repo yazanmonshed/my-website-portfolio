@@ -58,6 +58,11 @@
 
     }
 
+    footer {
+        width: 100%;
+        position: fixed;
+    }
+
 }
 
 @include media-md {
@@ -112,10 +117,7 @@
 
     }
 
-    footer {
-        width: 100%;
-        position: fixed;
-    }
+
 
 
 }
