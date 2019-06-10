@@ -135,4 +135,37 @@
 
         // }
 
+
+    }
+
+    main {
+
+        .lg-heading {
+
+            text-shadow: 4px 3px 6px #000
+        }
+
+
+        .icons {
+
+            & .icon {
+                padding-left: 40px;
+                display: inline-block;
+                margin-top: 30px;
+            }
+
+            & h3 {
+                margin: 20px 0 0 40px;
+                font-size: 2rem
+            }
+
+            & .icon {
+                & .fab:hover {
+                    transform: scale(1.1);
+                    transition: all 0.3s ease-in-out;
+                    color: #999;
+                }
+
+            }
+        }
     }

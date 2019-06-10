@@ -1,0 +1,73 @@
+@include media-sm {
+    main {
+        text-align: center;
+
+        & .lg-heading {
+            font-size: 20px;
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+
+        .icons {
+            .icon {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .menu {
+        text-align: center;
+
+        & .brand {
+            & .person-image {
+
+                width: 150px;
+                height: 150px;
+            }
+        }
+
+    }
+
+}
+
+@include media-md {
+    main {
+
+        align-items: center;
+        text-align: center;
+
+        & .lg-heading {
+            line-height: 1.9;
+
+        }
+
+        .icons {
+            .icon {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .menu {
+        text-align: center;
+
+        & .brand {
+            & .person-image {
+
+                width: 200px;
+                height: 200px;
+            }
+        }
+
+    }
+}
+
+@include media-lg {
+    main {
+        text-align: center;
+        line-height: 1.5;
+
+    }
+
+
+}

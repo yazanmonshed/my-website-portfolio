@@ -1,5 +1,7 @@
 @import 'config';
 @import './menu';
+@import './screens';
+
 
 * {
     box-sizing: border-box
@@ -25,12 +27,14 @@ h4 {
 
     &.lg-heading {
         font-size: 4rem;
-        font-weight: 500
+        font-weight: 500;
+        margin-top: 28px
     }
 
-    &.sm-heading {
-        background: lighten($primary-color, 0.2);
-    }
+    // &.sm-heading {
+    //     background: lighten($primary-color, 0.2);
+
+    // }
 }
 
 a {
@@ -60,4 +64,72 @@ main {
             margin-top: 20vh
         }
     }
+}
+
+.about-info {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas:
+        'image bio bio'
+        'work work work';
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 40px
+}
+
+.info-image {
+    grid-area: image;
+    border-radius: 50%;
+    border: 2px solid #FFF;
+    width: 300px;
+    height: 300px;
+    margin: 0 0 0 15px;
+}
+
+.info {
+    grid-area: bio;
+    font-size: 20px;
+}
+
+.work-1 {
+    grid: work;
+    width: 400px;
+    height: 300px;
+    background: #888;
+    border-left: 5px solid #000;
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 10px #000
+}
+
+.work-2 {
+    grid: work;
+    width: 400px;
+    height: 300px;
+    background: #888;
+    border-left: 5px solid #000;
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 10px #000
+}
+
+.work-3 {
+    grid: work;
+    width: 400px;
+    height: 300px;
+    background: #888;
+    border-left: 5px solid #000;
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 10px #000
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    background: #000;
+    line-height: 3.9;
+    height: 79px;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #FFF
 }
