@@ -1,0 +1,84 @@
+$primary-color: #777;
+
+
+
+$bg-image: url('../img/bg-1.png');
+$show-image: true;
+$bg-opacity: 0.5;
+
+// here Mixin's  function
+@mixin unstyled {
+    padding-left: 0;
+    text-decoration: none;
+}
+
+@mixin transitions-item($PropName, $time, $fntime) {
+
+    -moz-transition: $PropName $time $fntime;
+    -o-transition: $PropName $time $fntime;
+    -ms-transition: $PropName $time $fntime;
+    transition: $PropName $time $fntime;
+    @content;
+}
+
+@mixin background {
+
+    @if $show-image {
+        &#bg-img {
+
+            background: $bg-image;
+            background-size: cover;
+            background-attachment: fixed;
+            position: relative;
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100vh;
+                background: rgba(6, 6, 6, 0.6588235294117647);
+                z-index: -1
+            }
+        }
+
+    }
+}
+
+// Here Media Query 
+
+@mixin media-sm {
+    @media screen and (max-width: 556px) {
+
+        @content;
+
+    }
+}
+
+// Media screen (Tablate)
+@mixin media-md {
+    @media screen and (max-width: 767px) {
+
+        @content;
+
+    }
+}
+
+@mixin media-lg {
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+
+        @content;
+
+    }
+}
+
+
+
+@mixin media-xl {
+    @media screen and (max-width: 1200px) {
+
+        @content;
+
+    }
+}
